@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="">
+  <meta name="keywords" content="Video Language Model, Video Instruction Tuning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Spherical Leech Quantization for Visual Tokenization and Generation</h1>
+          <h1 class="title is-4 publication-conference"></h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="http://zhaoyue-zephyrus.github.io" target="_blank">Yue Zhao</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://hwjiang1510.github.io" target="_blank">Hanwen Jiang</a><sup>1,3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://wildphoton.github.io" target="_blank">Zhenlin Xu</a><sup>4,&dagger;</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://chutongyang98.github.io" target="_blank">Chutong Yang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://stanford.edu/~eadeli/" target="_blank">Ehsan Adeli</a><sup>2,*</sup>,
+            </span>
+            <span class="author-block">
+                <a href="http://philkr.net" target="_blank">Philipp Kr&auml;henb&uuml;hl</a><sup>1,*</sup>,
+            </span>
+        </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>UT Austin</span>
+            <span class="author-block"><sup>2</sup>Stanford University</span>
+            <span class="author-block"><sup>3</sup>Adobe Research</span>
+            <span class="author-block"><sup>4</sup>Mistral AI</span>
+          </div>
+
+          <div class="is-size-7 publication-authors">
+            <span class="author-block"><sup>*</sup>Equal advising.</span>
+            <span class="author-block"><sup>&dagger;</sup>Work done before joining Mistral AI.</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2512.xxxxx"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://ai.stanford.edu/~yzz/blog/articles/npq.html"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-blog"></i>
+                  </span>
+                  <span>Blog on Non-Parametric Quantization</span>
+                </a>
+              </span>
+              <br>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/zhaoyue-zephyrus/bsq-vit"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Compression & reconstruction)</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/zhaoyue-zephyrus/InfinityCC"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Generation with Infinity)</span>
+                  </a>
+              </span>
+              <!-- HF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://huggingface.co/collections/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    🤗
+                  </span>
+                  <span>HF Models</span>
+                  </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+            <p>
+                Non-parametric quantization has received much attention due to its efficiency on parameters and scalability to a large codebook. 
+                In this paper, we present a unified formulation of different non-parametric quantization methods through the lens of lattice coding.
+                The geometry of lattice codes explains the necessity of auxiliary loss terms when training auto-encoders with certain existing lookup-free quantization variants such as BSQ.
+                As a step forward, we explore a few possible candidates, including random lattices, generalized Fibonacci lattices, and densest sphere packing lattices.
+                Among all, we find the Leech lattice-based quantization method, which is dubbed as Spherical Leech Quantization (Λ24-SQ), leads to both a simplified training recipe and an improved reconstruction-compression tradeoff thanks to its high symmetry and even distribution on the hypersphere.
+                In image tokenization and compression tasks, this quantization approach achieves better reconstruction quality across all metrics than BSQ, the best prior art, while consuming slightly fewer bits.
+                The improvement also extends to state-of-the-art auto-regressive image generation frameworks.
+            </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+      <!-- Overview. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <h2 class="title is-3">Overview</h2>
+          <div class="content has-text-justified">
+            <img src="./static/images//overview.png" style="width: 100%; max-width: none;" alt="method overview">
+          </div>
+          <div class="content has-text-justified">
+              <p>
+                <b>Upper left</b>: A Venn Diagram that contains all definitions and quantization methods covered in this paper.
+                We provide a unified formulation of various non-parametric quantization methods from a lattice-coding perspective in Section 3.1.
+                The geometric interpretation of the entropy penalties in Section 3.2 then leads to a family of densest hypersphere packing lattices (Section 3.3).
+                Based on the spherical Leech lattice, a 24-d case of the densest hypersphere packing lattices, we instantiate Spherical Leech Quantization (Λ24-SQ) in Section 3.4 and apply it to modern discrete auto-encoders (middle) and visual autoregressive models (right).
+                <b>Lower left</b>: An illustrative 2D comparison between BSQ and spherical densest-packing lattice quantization (A2).
+                <b>Middle</b>: An auto-encoder with Λ24-SQ outperforms BSQ in image reconstruction and compression (Qualitative results on the top).
+                <b>Right</b>: Qualitative and quantitative results of a visual autoregressive generation model with Λ24-SQ on ImageNet-1k.
+                For the first time, we train a discrete visual autoregressive generation model with a codebook of 196, 560 without bells and whistles and achieve an oracle-like performance.
+              </p>
+        </div>
+        </div>
+      </div>
+      <!--/ Overview. -->
+  
+    </div>
+  </section>
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{zhao2025npq,
+  author    = {Zhao, Yue and Jiang, Hanwen and Xu, Zhenlin and Yang, Chutong and Adeli, Ehsan and  Kr&auml;henb&uuml;hl, Philipp},
+  title     = {Spherical Leech Quantization for Visual Tokenization and Generation},
+  journal   = {arXiv preprint arXiv:2512.xxxxx},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/contents/l24sq.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://ai.stanford.edu/~yzz/blog/articles/npq.html" target="_blank">
+        <i class="fas fa-blog"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/zhaoyue-zephyrus/bsq-vit" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/zhaoyue-zephyrus/InfinityCC" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The website template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">Nerfies</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
